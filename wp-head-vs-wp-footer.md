@@ -11,7 +11,7 @@ It allows WordPress and plugins to insert scripts, styles, and meta tags before 
 <head>
     <?php wp_head(); ?>
 </head>
-
+```
 Plugins use this hook to insert metadata, stylesheets, and scripts.
 
 ## 2. What is `wp_footer()`?
@@ -22,6 +22,7 @@ The wp_footer() function is placed just before the closing </body> tag in footer
   ...
   <?php wp_footer(); ?>
 </body>
+```
 When enqueueing JavaScript with the $in_footer parameter set to true, the script will load at the footer:
 function my_script() {
   wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/script.js', [], false, true);
