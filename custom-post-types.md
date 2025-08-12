@@ -29,3 +29,8 @@ add_action('init', function() {
   ]);
 });
 ```
+## Benefits / Key Takeaways
+- Cleanly separate and structure content types
+- Improve user experience in WP admin
+- Allow custom templates per content type
+- Help with SEO and site scalability
